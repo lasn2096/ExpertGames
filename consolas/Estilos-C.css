@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+
+.total {
+    width: 100%;
+    margin: auto;
+}
+.titulo {
+    margin: 20px;
+    font-size: 25px;
+}
+
+.img {
+    width: 95%;
+    margin: 20px auto;
+}
+
+.img img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.contenido h1 {
+    margin: 20px;
+    font-size: 20px;
+}
+.contenido p {
+    margin: 20px;
+    font-size: 20px;
+}
+
+@media (min-width: 768px) {
+    .total {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    .total {
+        width: 60%;
+        margin: auto;
+    }
+}

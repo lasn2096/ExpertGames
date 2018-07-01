@@ -1,0 +1,423 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*General*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+/*Cuerpo*/
+
+body {
+    min-width: 320px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.wrapper,
+.wrapper1,
+.wrapper2,
+.wrapper3 {
+    margin: auto;
+    overflow: hidden;
+}
+
+/*Encabezado-Pie*/
+
+.wrapper,
+.wrapper3 {
+    width: 100%;
+    background: silver;
+}
+
+/*Encabezado*/
+
+.wrapper {
+    border-bottom: 1px solid black;
+}
+
+/*Logo*/
+
+.wrapper-logo img {
+    display: block;
+    margin: 0 auto;
+}
+
+/*Navegador*/
+
+.nav {
+    list-style: none;
+}
+
+.nav li a {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    font-size: 20px;
+    background: black;
+    color: white;
+    transition: all 500ms ease;
+}
+
+.nav li a:hover {
+    background: #E74C3C;
+}
+
+/*Slider*/
+
+.flexslider {
+    width: 100%;
+    height: 150px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    width: 700%;
+    animation: cambio 40s infinite alternate;
+    animation-timing-function: ease-in-out;
+}
+
+.flexslider li {
+    width: 100%;
+    list-style: none;
+}
+
+.flexslider img {
+    width: 100%;
+    height: 150px;
+}
+
+@keyframes cambio {
+    0% {
+        margin-left: 0;
+    }
+    10% {
+        margin-left: 0;
+    }
+    15% {
+        margin-left: -100%;
+    }
+    25% {
+        margin-left: -100%;
+    }
+    30% {
+        margin-left: -200%;
+    }
+    40% {
+        margin-left: -200%;
+    }
+    45% {
+        margin-left: -300%;
+    }
+    55% {
+        margin-left: -300%;
+    }
+    60% {
+        margin-left: -400%;
+    }
+    70% {
+        margin-left: -400%;
+    }
+    75% {
+        margin-left: -500%;
+    }
+    85% {
+        margin-left: -500%;
+    }
+    90% {
+        margin-left: -600%;
+    }
+    100% {
+        margin-left: -600%;
+    }
+}
+
+/*Barra*/
+
+.barra {
+    width: 99%;
+    margin: 5px auto;
+    background: black;
+    text-align: center;
+    border-radius: 1em;
+}
+
+.barra a {
+    text-decoration: none;
+    color: white;
+}
+
+/*Noticias*/
+
+.wrapper1,
+.wrapper2 {
+    width: 98%;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: .5em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.main article {
+    width: 100%;
+    border-bottom: 1px solid black;
+    margin-bottom: 5px;
+}
+
+.main article img {
+    width: 95%;
+    display: block;
+    margin: 0 auto;
+    height: 150px;
+    border-radius: 5px;
+}
+
+.main article h1 {
+    font-size: 20px;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.main article a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.main article p {
+    color: black;
+    margin: 0 10px;
+    text-align: justify;
+    padding-bottom: 5px;
+}
+
+/*Noticias-2*/
+
+.main1 {
+    display: none;
+}
+
+/*Video*/
+
+.video {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.video iframe {
+    width: 98%;
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+    max-width: 300px;
+    height: 170px;
+}
+
+/*Pie*/
+
+.wrapper3 {
+    color: black;
+    padding: 5px 0px;
+    margin-top: 5px;
+    border-top: 1px solid black;
+}
+
+.part1 {
+    border-bottom: 1px solid black;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 5px;
+}
+
+.part1 section {
+    margin-bottom: 5px;
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 120px;
+}
+
+.part1 ul p a {
+    text-decoration: none;
+    color: black;
+}
+
+/*Pie-2*/
+
+.part2 {
+    text-align: center;
+}
+
+.part2 .social {
+    margin: 5px 0;
+}
+
+.part2 .social a {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+.part2 .social a i {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.fa-facebook {
+    background: royalblue;
+}
+
+.fa-twitter {
+    background: skyblue;
+}
+
+.fa-youtube {
+    background: red;
+}
+
+@media (min-width: 425px) {
+    /*Slider*/
+    .flexslider {
+        height: 200px;
+    }
+    .flexslider img {
+        height: 200px;
+    }
+    /*Noticias*/
+    .main article img {
+        height: 200px;
+    }
+    /*Video*/
+    .video iframe {
+        max-width: 350px;
+        height: 200px;
+    }
+}
+
+@media (min-width: 768px) {
+    /*Logo*/
+    .wrapper-logo {
+        width: 45%;
+        float: left;
+    }
+    /*Navegador*/
+    .wrapper-nav {
+        float: right;
+        margin-top: 116px;
+    }
+    .nav li a {
+        padding: 5px 10px;
+    }
+    .nav li {
+        float: left;
+    }
+    /*Slider*/
+    .flexslider {
+        height: 250px;
+    }
+    .flexslider img {
+        height: 250px;
+    }
+    /*Noticias*/
+    .main article h1 {
+        margin: 0 150px;
+        font-size: 25px;
+    }
+    .main article p {
+        margin: 0 75px;
+    }
+    .main article img {
+        width: 70%;
+        height: 250px;
+    }
+}
+
+@media (min-width: 1024px) {
+    /*Navegador*/
+    .nav li a {
+        padding: 10px 25px;
+    }
+    /*Slider*/
+    .flexslider {
+        height: 300px;
+    }
+    .flexslider img {
+        height: 300px;
+    }
+    /*Noticias*/
+    .main {
+        width: 65%;
+        float: left;
+    }
+    .main article {
+        height: 255px;
+    }
+    .main article h1 {
+        margin: 0px;
+    }
+    .main article p {
+        margin: 0px;
+    }
+    .main article img {
+        width: 50%;
+        float: left;
+        height: 225px;
+        margin: 5px;
+    }
+    /*Noticas-2*/
+    .main1 {
+        display: block;
+        height: 769px;
+        margin-top: 5px;
+        margin-left: 65.5%;
+        border-left: 2px solid #171717;
+    }
+    .main1 article {
+        margin: 0px 5px;
+        height: 85.5px;
+        border-bottom: 2px solid #171717;
+    }
+    .main1 article h1 {
+        padding-top: 15px;
+        font-size: 20px;
+    }
+    .main1 article a {
+        text-decoration: none;
+        color: #171717;
+    }
+    /*Video*/
+    .video iframe {
+        max-width: 450px;
+        height: 250px;
+    }
+}
+
+@media (min-width: 1440px) {
+    /*Cuerpo*/
+    body {
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+    }
+    /*Navegador*/
+    .nav li a {
+        padding: 10px 25px;
+    }
+    .main article img {
+        width: 50%;
+        float: left;
+        height: 225px;
+        margin: 10px;
+    }
+    /*Video*/
+    .video iframe {
+        max-width: 500px;
+        height: 275px;
+    }
+}

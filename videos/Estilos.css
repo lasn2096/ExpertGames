@@ -1,0 +1,71 @@
+@charset "utf-8";
+/* CSS Document */
+
+.barra1 {
+    width: 95%;
+    margin: 10px auto 0px;
+    background: black;
+    text-align: center;
+    border-radius: 1em;
+}
+
+.barra1 a {
+    text-decoration: none;
+    color: white;
+}
+
+.wrapper-sub {
+    width: 94%;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.sub article {
+    width: 100%;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.sub article img {
+    width: 95%;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.sub article h1 {
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.sub p {
+    color: black;
+    text-align: justify;
+    margin: 0 10px;
+    padding-bottom: 10px;
+}
+
+.sub a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .sub article {
+        height: 250px;
+    }
+    .sub article img {
+        width: 45%;
+        float: left;
+        height: 225px;
+    }
+    .sub article h1 {
+        margin-left: 46%;
+    }
+    .sub article p {
+        margin-left: 47%;
+    }
+}

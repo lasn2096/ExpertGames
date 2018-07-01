@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* CSS Document */
+
+.titulo {
+    margin: 20px;
+    font-size: 30px;
+}
+
+.sub-titulo {
+    font-size: 40px;
+    margin: 20px;
+    font-weight: bold;
+}
+
+.contenido p {
+    margin: 20px;
+    font-size: 20px;
+}
+
+.contenido li {
+    margin: 20px;
+    font-size: 20px;
+}
+
+@media (min-width: 768px) {
+    .total {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    .total {
+        width: 60%;
+        margin: auto;
+    }
+}
